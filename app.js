@@ -1,10 +1,13 @@
 const express = require('express');
-const router = require('./routes/index');
+const router = require('./src/routes/index');
 const http = require('http');
 const cors = require('cors');
 const mercadopago = require('mercadopago');
 const server = express();
 require('dotenv').config();
+require('./src/database');
+
+
 
 server.use(express.json());
 server.use(cors({origin: '*'}));
