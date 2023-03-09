@@ -1,6 +1,5 @@
 const Router = require("express");
 const payMp = require("./payMp");
-
 const router = Router();
 
 router.use("/",payMp);
